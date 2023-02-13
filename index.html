@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de cadastro</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mukta:wght@500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="form">
+      <h1>Informações Pessoais</h1>
+      <br>
+    </div>
+
+    <div class="form">
+      <!--INFORMAÇÕES PESSOAIS-->
+      <form method="get" action="." id="formEndereco">
+        <div class="linha">
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 50%;">CPF </td>
+              <td style="width: 50%;">RG</td>
+            </tr>
+            <tr>
+              <td>
+                <input style="width: 80%;" type="tel" maxlength="11" placeholder="DIGITE SEU CPF" id="number" required>
+              </td>
+              <td>
+                <input style="width: 80%;" maxlength="9" type="text" placeholder="DIGITE SEU RG" />
+              </td>
+            </tr>
+            <tr class="espacamento"></tr>
+            <tr>
+              <td colspan="2">NOME COMPLETO</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input style="width: 90%;" type="text" placeholder="DIGITE SEU NOME COMPLETO" id="number" required>
+              </td>
+            </tr>
+            <tr class="espacamento"></tr>
+            <tr>
+              <td colspan="2">NOME DA MÃE</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input style="width: 90%;" type="text" placeholder="NOME DA MÃE">
+              </td>
+            </tr>
+            <tr class="espacamento"></tr>
+            <tr>
+              <td>DATA DE NASCIMENTO</td>
+              <td>TELEFONE</td>
+            </tr>
+            <tr>
+              <td>
+                <input style="width: 80%;" id="date" type="date" placeholder="">
+              </td>
+              <td>
+                <input style="width: 80%;" name="number" type="text" placeholder="DIGITE SEU TELEFONE" />
+              </td>
+            </tr>
+            <tr class="espacamento"></tr>
+            <tr>
+              <td> NÚMERO DE TELEFONE</td>
+              <td>E-MAIL</td>
+            </tr>
+            <tr>
+              <td>
+                <input name="number" maxlength="11" type="text" placeholder="NÚMERO DE TELEFONE" />
+              </td>
+              <td>
+                <input type="email" placeholder="ESCREVA SEU E-MAIL" />
+              </td>
+            </tr>
+          </table>
+          <br>
+          <hr>
+          <!--FIM INFORMAÇÕES PESSOAIS-->
+          <h1>ENDEREÇO</h1>
+          <!--COMEÇO ENDEREÇO-->
+          <table>
+            <tr>
+              <td>CEP</td>
+              <td>BAIRRO</td>
+            </tr>
+            <td>
+              <input name="cep" placeholder="DIGITE SEU CEP" type="text" id="cep" onblur="pesquisacep(this.value);" />
+            </td>
+            <td>
+              <input name="bairro" type="text" placeholder="QUAL O SEU BAIRRO" id="bairro" size="20" />
+            </td>
+            <tr>
+              <td>RUA</td>
+              <td>NÚMERO</td>
+            </tr>
+            <td>
+              <input name="" placeholder="RUA/AVENIDA" type="tel" id="rua" size="30" />
+            </td>
+            <td>
+              <input name="N" type="text" placeholder="N°" id="rua" size="1" />
+            </td>
+            <tr>
+              <td>COMPLEMENTO</td>
+              <td>CONDOMINIO</td>
+            </tr>
+            <td>
+              <input type="text" id="Casa" required placeholder="APTO/BLOCO" />
+            </td>
+            <td>
+              <input name="cidade" type="text" placeholder="QUAL O SEU CONDOMINIO" id="cidade" />
+            </td>
+            <tr>
+              <td>BLOCO E APARTAMENTO</td>
+              <td>ESTADO</td>
+            </tr>
+            <td>
+              <input type="text" placeholder="BLOCO / APARTAMENTO" id="cidade" />
+            </td>
+            <td>
+              <input placeholder="UF" name="uf" type="text" id="uf" size="1" />
+            </td>
+          </table>
+          <br>
+          <button style="font-weight: bold;">Enviar Formulário</button>
+        </div> <!--FIM ENDEREÇO-->
+    </div>
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

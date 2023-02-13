@@ -1,0 +1,74 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+
+  }
+  
+  body {
+    background: linear-gradient( rgba(25, 25, 25, 1) 100%, #8dd0f5 100%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    position: center;    
+  }
+  
+  .container {
+    background-color: #3e38ac;
+    box-shadow: rgba(235, 235, 235, 0.24) 0px 5px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+  
+  }
+  
+  /* Form */
+  .form h3 {
+    margin-bottom: 1rem;
+  }
+
+  input,::placeholder {
+    color:rgba(0, 0, 0, 0.342);
+    
+  }
+
+  
+  .form input {
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius: 10px;
+  }
+  
+  .form button {
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  .espacamento {
+    height: 15px;
+  }
+  div:hover:not(:hover){
+    opacity: 0.3;
+  }
+
+  button:hover{
+    scale: 1.1;
+    transition: 500ms;
+  }
+
+  table,td {
+   /*border: 1px solid #3e38ac;*/ 
+   font-weight: bold;
+  }
+
+  
